@@ -52,14 +52,14 @@ class ShopifyPageController extends \PageController
         $this->storefront_access_token = Client::config()->get('storefront_access_token');
     }
 
-    public function index()
-    {
-        if (Director::is_ajax() or $this->request->getVar('Ajax') == '1') {
-            return $this->customise(array('Ajax' => 1))->renderwith('Swordfox/Shopify/Includes/AllProductsInner');
-        } else {
-            return array();
-        }
-    }
+    // public function index()
+    // {
+    //     if (Director::is_ajax() or $this->request->getVar('Ajax') == '1') {
+    //         return $this->customise(array('Ajax' => 1))->renderwith('Swordfox/Shopify/Includes/AllProductsInner');
+    //     } else {
+    //         return array();
+    //     }
+    // }
 
     public function AllProducts($Paginated = true)
     {
