@@ -25,8 +25,6 @@ class Client
      */
     private static $api_key = null;
 
-    private $api_version = null;
-
     /**
      * @config null|string
      */
