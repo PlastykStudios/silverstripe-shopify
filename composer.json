@@ -12,18 +12,18 @@
         }
     ],
 	"require": {
-		"silverstripe/framework": "4.x",
-		"silverstripe/cms": "4.x",
+		"silverstripe/framework": "4.x || 5.x",
+		"silverstripe/cms": "4.x || 5.x",
 		"composer/installers": "*",
 		"guzzlehttp/guzzle": "*",
-		"symbiote/silverstripe-gridfieldextensions": "^3"
+		"symbiote/silverstripe-gridfieldextensions": "^3 || ^4"
 	},
     "extra": {
         "expose": [
             "images"
         ],
 		"branch-alias": {
-			"dev-master": "1.2.x-dev"
+			"dev-master": "5.0.x-dev"
 		}
     },
 	"autoload": {
